@@ -3,8 +3,8 @@ import tripsData from "../tripsData";
 import { useParams, Navigate } from "react-router";
 
 function TripDetail() {
-  const { tripId } = useParams();
-  const trip = tripsData.find((trip) => trip.id === +tripId);
+  const { slug } = useParams();
+  const trip = tripsData.find((trip) => trip.slug === slug);
 
   if (!trip) {
     return <Navigate to="/" />;

@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/details/:tripId",
+    path: "/details/:slug",
     element: (
       <div>
         <Nav />
